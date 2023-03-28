@@ -1,0 +1,3 @@
+node_modules
+/serveur/.env
+.env
