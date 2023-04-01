@@ -1,38 +1,198 @@
-.App {
-  text-align: center;
+/* *{
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app{
+  height: 100vh;
+  width: 100%;
+  background-color: #FAEBCD;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.content{
+  height: 65vh;
+  width: 80%;
+  background-color: #F6F6F6;
+  overflow: hidden;
+  display: flex;
+}
+
+.container-content{
+  height: 100%;
+  width: 80%;
+  
+}
+
+.title{
+  background-color: white;
+  height: 50px;
+  width: 100%;
+
+}
+
+.nav{
+  height: calc(100% - 50px);
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 20%;
+  padding: 5px;
+}
+
+nav{
+  height: 100%;
+  width: 100%;
+}
+
+nav ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav li{
+  padding: 7px 5px 7px 5px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: all ease .2s;
+}
+
+nav li.active{
+    background-color: black;
+}
+
+nav li.active a{
+    color: white;
+}
+
+nav li:hover{
+  color: white;
+  background-color: rgb(99, 98, 98);
+}
+
+nav li:hover a{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+@media screen and (max-width : 1450px){
+  .content{
+    width: 80%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width : 900px){
+  .content{
+    width: 90%;
   }
-  to {
-    transform: rotate(360deg);
+}
+ */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+*::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+
+.App{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content{
+  height: 80%;
+  width: 80%;
+  overflow: hidden;
+  overflow-x: scroll;
+}
+
+.BlocListe{
+  height: 100%;
+  min-width: 300px;
+  width: 30%;
+  background-color: rgb(201, 201, 201);
+}
+
+.BlocAdd{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 2px rgb(0, 0, 0) solid;
+}
+
+.Liste{
+  height: 85%;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.footer{
+  width: 100%;
+  height: 8%;
+  background-color: beige;
+  border-top: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px -4px 3px rgba(122, 121, 121, 0.75);
+}
+
+.studentBloc{
+  height: 100%;
+  width: 70%;
+  min-width: 330px;
+
+}
+
+.title{
+  width: 100%;
+  height: 10%;
+  border-bottom: 2px rgb(0, 0, 0) solid;
+  border-left: 2px rgb(0, 0, 0) solid;
+  background-color: rgb(201, 201, 201);
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.image{
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.back{
+  display: none;
+}
+
+@media screen and (max-width : 1024px){
+  .blocInfo{
+    flex-direction: column !important;
+  }
+  .nfo{
+    margin: 0 !important;
+  }
+  .back{
+    display: block;
+    position: relative;
+    width: 100px;
+    bottom: -110px;
   }
 }

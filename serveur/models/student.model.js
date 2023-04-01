@@ -5,7 +5,6 @@ const StudentSchema = new mongoose.Schema(
         name: {
             type: String,
             min: 5,
-            max: 20,
             required:true
         },
         age: {
@@ -15,15 +14,9 @@ const StudentSchema = new mongoose.Schema(
             required:true
             
         },
-        class: {
+        email: {
             type: String,
             required:true
-            
-        },
-        phone_number: {
-            type: String,
-            required:true
-            
         }
         
     },
